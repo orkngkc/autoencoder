@@ -12,7 +12,21 @@ In maritime monitoring tasks, detecting the presence of potentially dangerous or
 - Used a subset of background-only images extracted manually from the MASATI training set
 - Image size: All input images were resized to 256×256 for training
 
-## 🧠 Autoencoder Architecture & Training
+  ### Model Architecture
+
+- **Encoder**:
+  - Conv2D (in=3, out=16, kernel=3, stride=2, padding=1) + ReLU
+  - Conv2D (16 → 32, stride=2) + ReLU
+  - Conv2D (32 → 64, stride=2) + ReLU
+
+- **Decoder**:
+  - ConvTranspose2D (64 → 32, stride=2) + ReLU
+  - ConvTranspose2D (32 → 16, stride=2) + ReLU
+  - ConvTranspose2D (16 → 3, stride=2) + Sigmoid
+
+> Output is same size as input (256×256), suitable for pixel-wise comparison.
+
+## 🧠 Autoencoder Training
 
 - Framework: PyTorch 2.0 with CUDA acceleration (A100-SXM4-40GB)
 - Input: 256×256 RGB image patches
