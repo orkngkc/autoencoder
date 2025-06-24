@@ -65,10 +65,6 @@ Error(i, j) = (R_input - R_recon + G_input - G_recon + B_input - B_recon) / 3
 - Use more diverse background training data including ports
 - Re-implement with deeper architectures using more powerful GPUs
 
-## 👥 Authors
-
-- Melih Kaan Şahinbaş: Autoencoder research, anomaly detection experiments
-- Orkun Efe Gökçe: Model training, unsupervised inference, visualizations
 
 ## 📎 Reference
 
