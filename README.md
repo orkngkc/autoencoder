@@ -72,7 +72,7 @@ Error(i, j) = (R_input - R_recon + G_input - G_recon + B_input - B_recon) / 3
 
 ## 📎 Reference
 
-- MASATI Dataset: [https://www.sciencedirect.com/science/article/pii/S235248552400608X](https://www.sciencedirect.com/science/article/pii/S235248552400608X)
+- MASATI Dataset: [https://www.iuii.ua.es/datasets/masati/)
 
 ## 📄 License
 
